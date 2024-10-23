@@ -1,9 +1,10 @@
 const prompt = require(`prompt-sync`)()
-var n = 1
-var n2 = 0
 
-while(n <= 100){
-        n2 += n
-        n++
-    }
-console.log(`${n2}`)
+const numero = parseInt(prompt(`Digite um numero: `))
+
+let fatorial = 1
+
+for (let iterator = numero; iterator >= 1; iterator--){
+    fatorial *= iterator
+}
+console.log(`${numero}! é ${fatorial}`)

@@ -1,10 +1,12 @@
 const prompt = require(`prompt-sync`)()
 
-var i = 0
-var soma = 0
-for( i = 1; i <= 4; i++){
-   let numero = parseInt(prompt(`Digite o numero ${i}:`))
-   soma += numero
+const numero = parseInt(prompt(`Digite um Numero: `))
+
+let iterator = numero
+
+let fatorial = 1
+
+while(iterator >= 1){
+   fatorial *= iterator
+   iterator--
 }
-var media = soma / 4
-console.log(`${media}`)
